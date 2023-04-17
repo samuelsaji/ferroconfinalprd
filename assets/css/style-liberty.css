@@ -15655,7 +15655,7 @@ a.title-style-anchor {
 }
 
 a.title-style-anchor:hover {
-  color: var(--primary-color);
+  color: black;
 }
 
 @media (max-width: 1199px) {
