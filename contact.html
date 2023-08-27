@@ -13,6 +13,18 @@
     <!-- //google-fonts -->
     <!-- Template CSS Style link -->
     <link rel="stylesheet" href="assets/css/style-liberty.css">
+
+    <script>
+        function showConfirmation() {
+          var confirmed = confirm("Are you sure you want to submit this form?");
+          if (confirmed) {
+            // You can add additional logic here to handle form submission
+            alert("Form submitted successfully!");
+          } else {
+            alert("Form submission canceled.");
+          }
+        }
+        </script>
 </head>
 
 <body>
@@ -87,8 +99,8 @@
                         <div class="input-grids">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_template" value="table">
-                            <input type="hidden" name="_next" value="https://youtube.com">
-                            
+                            <input type="hidden" name="_next" value="https://samuelsaji.github.io/ferroconfinalprd/contact.html">
+
                             <input type="text" name="name" id="w3lName" placeholder="Your Name*"
                                 class="contact-input" required="" />
                             <input type="email" name="email" id="w3lSender" placeholder="Your Email*"
@@ -103,7 +115,7 @@
                         <!--<input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_template" value="table">
                         <input type="hidden" name="_next" value="https://youtube.com">-->
-                        <button class="btn btn-style mt-sm-3">Send Message</button>                    
+                        <button class="btn btn-style mt-sm-3" onclick="showConfirmation()">Send Message</button>                    
                     </form>
 
                     <div class="contact-left mt-5 pt-lg-4">
